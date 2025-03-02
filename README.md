@@ -40,3 +40,6 @@ Here are some things I’d love to add in the future:
 - **More filters (body type, location, etc.).**
 - **Compare multiple cars side by side.**
 
+---
+# Interface
+![App Interface](images/app_screenshot.png)
