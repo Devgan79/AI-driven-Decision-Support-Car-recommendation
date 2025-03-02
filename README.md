@@ -42,4 +42,5 @@ Here are some things I’d love to add in the future:
 
 ---
 # Interface
-![App Interface](images/app_screenshot.png)
+
+![App Screenshot](app_screenshot.png)
