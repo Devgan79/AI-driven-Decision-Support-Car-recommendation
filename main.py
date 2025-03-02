@@ -19,10 +19,8 @@ df_encoded[numerical_columns] = scaler.fit_transform(df_encoded[numerical_column
 features_for_similarity = df_encoded.drop(columns=["Price"])  # Exclude Price
 similarity_matrix = cosine_similarity(features_for_similarity)
 
-# GUI - Streamlit Interface
 st.title("🚗 Car Recommendation System")
 
-# User Inputs
 brand = st.selectbox("Select Brand", df["Brand"].unique())
 model = st.selectbox("Select Model", df[df["Brand"] == brand]["Model"].unique())
 year = st.slider("Select Year", int(df["Year"].min()), int(df["Year"].max()), 2020)
@@ -54,19 +52,18 @@ for col in categorical_columns:
 
 user_df = pd.DataFrame([user_preferences])
 
-# Align columns with df_encoded (fill missing columns with 0)
 user_df = user_df.reindex(columns=df_encoded.columns, fill_value=0)
-
-# Normalize numerical fields
 user_df[numerical_columns] = scaler.transform(user_df[numerical_columns])
-
-# Calculate similarity
 similarity_scores = cosine_similarity(user_df, df_encoded)[0]
 
-# Get Top 5 Recommendations
+# Get Top 5 Recommendations/ you can  Channge if you like 
 top_indices = np.argsort(similarity_scores)[-5:][::-1]
 recommended_cars = df.iloc[top_indices][["Brand", "Model", "Year", "Price", "Fuel_Type", "Transmission"]]
 
 # Display Recommendations
 st.subheader("Top Recommended Cars for You:")
 st.write(recommended_cars)
+
+
+
+# TO RUN THIS TYPE THIS IN THE TERMINAL streamlit run main.py
