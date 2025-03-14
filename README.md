@@ -1,4 +1,4 @@
-# 🚗 Car Recommendation System
+# 🚗AI-driven Decision Support Car Recommendation
 
 Welcome to my **Car Recommendation System** project!  
 This project uses **Machine Learning** to suggest cars based on your preferences — all wrapped up in a clean, interactive **Streamlit** app.
