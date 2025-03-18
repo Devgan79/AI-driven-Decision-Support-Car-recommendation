@@ -9,7 +9,7 @@ This project uses **Machine Learning** to suggest cars based on your preferences
 
 This system compares your preferences (like brand, fuel type, mileage, price range, etc.) with a dataset of cars. It uses **Cosine Similarity** to find cars that match your tastes the closest.
 
-Once you set your preferences, the app will show you the **Top 5 Recommended Cars** with their prices, fuel type, transmission, and more.
+Once you set your preferences, the app will show you the **Top 5 Recommended Cars** with their prices, fuel type, transmission, and more
 
 ---
 
