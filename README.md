@@ -27,7 +27,7 @@ Once you set your preferences, the app will show you the **Top 5 Recommended Car
 - Python
 - Streamlit (for the UI)
 - Scikit-Learn (for similarity calculations)
-- Pandas & NumPy (for data handling)
+- Pandas & NumPy (for data handling
 - Matplotlib & Seaborn (for visualizations)
 
 ---
